@@ -35,6 +35,8 @@ function renderGame() {
 	} else if (sum === 21) {
 		message = "Wohoo! You've got Blackjack ! 🥳";
 		hasBlackJack = true;
+		newCardBtn.setAttribute("disabled", "");
+		document.getElementById("reset-btn").disabled = false;
 	} else {
 		message = "You're out of the game ! 😭";
 		isAlive = false;
